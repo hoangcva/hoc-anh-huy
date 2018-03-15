@@ -1,0 +1,246 @@
+html{
+	box-sizing: border-box;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+body{
+	font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-weight: 400;
+    margin: 10px 0;	
+}
+h1{
+	font-size: 36px;
+}
+h2{
+	font-size: 21px;
+	/*padding: 20px 0px 20px 0px;*/
+}
+h4{
+	font-size: 20px;
+}
+.floatleft{
+	float: left;
+}
+.floatright{
+	float: right;
+}
+.clearfix{
+	clear: both;
+}
+a{
+	color: inherit;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:link {
+
+}
+a:visited{
+	background-color: #4CAF50;
+}
+a:hover{
+    /*	background-color: lightgray;    */
+}
+
+header{
+	font-family: Verdana,sans-serif;
+	height: 70px;
+	padding: 10px 5px 20px 10px;
+	font-size: 17px;
+}
+
+header>a:hover{
+	color: #4CAF50;
+	background-color: transparent;
+}
+a.button{
+	padding: 8px 16px;
+	font-size: 17px;
+}
+a.button:hover{
+	box-shadow: 5px 7px 30px #888888;
+}
+
+a.button.previous{
+	border: solid 1px #cccccc;
+	background-color: white;
+}
+
+a.button.next{
+	color: white;
+	border: solid 1px #4CAF50;
+	background-color: #4CAF50;
+}
+
+.logo{
+	font: bolder;
+	font-size: 37px;
+	letter-spacing: 2px;
+    font-family: fontawesome;
+	color: #555555;
+}
+.title{
+	padding-top: 20px;
+}
+
+nav{
+	width: 100%;
+	background-color: #5f5f5f;
+	font-size: 17px;
+	height: 44px;
+/*	padding: 10px;*/
+	position: sticky;
+	top: 0;
+}
+nav>a:hover{
+    background-color: black;    
+}
+
+aside{
+	color: #000;
+	font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+aside h2{
+	padding-left: 15px;
+	margin: -4px 0 4px 0;
+}
+aside.left{
+	background-color: #f1f1f1;	
+	position: sticky;
+	top: 44px;
+	max-width: 100%;
+	overflow-y: scroll;
+	height: 600px;
+}
+aside.left a{
+	font-family: "Segoe UI",Arial,sans-serif;
+	padding: 2px 1px 1px 16px;
+}
+aside.left a:hover{
+	background-color: lightgray;
+}
+div.left{
+	position: sticky;
+	top: 44px;
+}
+aside.right{
+/*	width: 200px;*/
+	text-align: center;
+/*	height: 1000px;*/
+	display: inline;
+}
+aside.right a:hover{
+	color: #4CAF50;
+	text-decoration: underline;
+}
+
+/*section*/
+.grid-item2{
+	padding: 16px;
+}
+section{
+	/*padding-left: 20px;*/
+}
+section>h1{
+	margin: 10px 0;
+}
+section h2{
+	font-size: 30px;
+}
+section p{
+	margin: 15px 0;
+}
+.intro{
+	font-size: 16px;
+	border-left: solid 6px #4CAF50;
+	background-color: #ddffdd;
+	padding: 0.01em 16px;
+	margin: 16px 0;
+}
+.box{
+	background-color: #f1f1f1;
+	box-shadow:0 2px 4px 0 rgba(0,0,0,0.16);
+	margin: 20px 0;
+	padding: 0.01em 16px;
+}
+.box a{
+	display: inline-block;
+	margin: 0 0 16px 0;
+	color: white;
+	background-color: #4CAF50;
+}
+
+section h3{
+	margin: 20px 0;
+	font-size: 24px;
+}
+.code{
+	font-family: Consolas,"courier new";
+	font-size: 16px;
+	border-left: solid 4px #4CAF50;
+	padding: 8px 12px;
+	margin: 16px 0;
+	background-color: white;
+}
+section>div.button{
+
+}
+section a.underline{
+	text-decoration: underline;
+}
+section a.underline:hover{
+	color: #4CAF50;
+}
+hr{
+	border: 0;
+	border-top: solid 1px #eee;
+	margin: 20px 0;
+}
+
+
+footer{
+	text-align: center;
+	font-size: 12px;
+	font-family: Verdana,sans-serif;
+	color: #5f5f5f;
+	position: relative;
+	bottom: 0;
+}
+.inline{
+	display: block;
+}
+.nav{
+	list-style-type: none;
+	padding: 10px;
+	padding-left: 10px;
+	color: #f1f1f1;
+	font-family: "Segoe UI",Arial,sans-serif;
+}
+
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 20% 65% 15%;
+}
+.grid-container>div{
+
+}
+.grid-item4{
+	grid-column-start: 2;
+  	grid-column-end: 4;
+}
+.grid-container-2{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
